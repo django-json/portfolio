@@ -1,0 +1,76 @@
+.personal-details {
+	display: flex;
+	justify-content: flex-start;
+	color: var(--color-grey-3);
+}
+
+.personal-details__image-container {
+	width: 300px;
+	min-width: 250px;
+	margin-right: var(--space-lg);
+	float: left;
+}
+
+.personal-details__details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.personal-details__photo {
+	width: 100%;
+	border-radius: 12px;
+}
+
+.personal-details__name {
+	font-weight: 600;
+	font-size: var(--text-xl);
+}
+
+.personal-details__row {
+	display: flex;
+	align-items: flex-start;
+}
+
+.personal-details__name {
+	margin: 0;
+}
+
+.personal-details__profession {
+	margin-top: var(--space-xs);
+}
+
+.personal-details__email,
+.personal-details__phone {
+	margin-top: 0;
+	margin-bottom: var(--space-xs);
+}
+
+.personal-details__name,
+.personal-details__email,
+.personal-details__phone {
+	color: var(--color-grey-2);
+}
+
+@media screen and (max-width: 991.98px) {
+	.personal-details__image-container {
+		width: 15%;
+		margin-right: var(--space-lg);
+		float: left;
+	}
+}
+
+@media screen and (max-width: 767.98px) {
+	.personal-details__image-container {
+		width: 100%;
+		min-width: unset;
+		margin-bottom: var(--space-xs);
+	}
+
+	.personal-details {
+		flex-direction: column;
+	}
+
+	.personal-details__details {
+		flex-direction: column;
+	}
+}
